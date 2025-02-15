@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Karen Xerinda Portfolio",
     page_icon="📊",
 )
 
@@ -14,8 +14,8 @@ with st.sidebar:
     st.image("eae_img.png", width=200)
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
-    st.write("***Final Project - Dec 2023***")
-    st.write("**Author:** <Your Name>")
+    st.write("***Final Project - Mar 2025***")
+    st.write("**Author:** Karen Xerinda")
     st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
@@ -39,7 +39,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "Student pursuing a Masters in Big Data and Analytics"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -51,19 +51,19 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 I am a Software Engineer, pursuing a Master's in Big Data and Analytics.
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ prev: Web Developer for small businesses.
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️ My passions include writing and producing music.
 
-- 🤖 <Your Personal Projects>
+- 🏂 My hoobies are horse riding and writing.
 
-- 🏂 <Your Hobbies>
-
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: karenxerinda88@gmail.com
 
 - 🏠 Barcelona
+
+- LinkedIn: https://www.linkedin.com/in/karen-xerinda-72194a225/
 """)
 
 # Feel free to add other points like your Linkedin, Github, Social Media, etc.
