@@ -50,7 +50,6 @@ max_height = None   # TODO: Replace None with the maximum height of the image us
 min_width = 0
 max_width = None    # TODO: Replace None with the maximum width of the image using np.shape() function   
 
-
 # ----- Creating the sliders to receive the user input with the dimensions to crop the image ----- 
 if type(max_height) == int and type(max_width) == int:
     
