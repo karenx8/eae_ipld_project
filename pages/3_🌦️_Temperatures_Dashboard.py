@@ -32,7 +32,6 @@ def load_data():
     data_path = "data/cities_temperatures.csv"
 
     temps_df = pd.read_csv(data_path)  # TODO: Ex 3.1: Load the dataset using Pandas, use the data_path variable and set the index column to "show_id"
-    temps_df.set_index("show_id", inplace=True)
     if temps_df is not None:
         temps_df["Date"] = pd.to_datetime(temps_df["Date"]).dt.date
 
