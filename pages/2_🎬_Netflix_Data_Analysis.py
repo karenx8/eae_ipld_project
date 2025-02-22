@@ -57,7 +57,7 @@ num_missing_directors = movies_df["director"].isnull().sum()
 movies_df["country"] = movies_df["country"].fillna("Unknown")
 total_countries = ", ".join(movies_df["country"]).split(", ")
 unique_countries = set(total_countries)
-unique_countries=[x for x in unique_countries if x.strip()]
+unique_countries={country.strip() for country in total_countries if country.strip() and country != "Unknown"}
 n_countries = len(unique_countries)
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
