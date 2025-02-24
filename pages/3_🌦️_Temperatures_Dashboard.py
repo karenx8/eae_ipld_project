@@ -54,7 +54,7 @@ temps_df["AvgTemperatureCelsius"] = (temps_df["AvgTemperatureFahrenheit"]-32)*(5
 # ----- Extracting some basic information from the dataset -----
 
 # TODO: Ex 3.3: How many different cities are there? Provide a list of them.
-unique_countries_list = temps_df["Country"].unique()
+unique_countries_list = temps_df["City"].unique()
 print(unique_countries_list)
 
 # TODO: Ex 3.4: Which are the minimum and maximum dates?
@@ -112,7 +112,7 @@ st.header("Comparing the Temperatures of the Cities")
 
 if unique_countries_list is not None:
     # Getting the list of cities to compare from the user
-    selected_cities = st.multiselect("Select the cities to compare:", unique_countries_list, default=["Argentina", "Senegal"], max_selections=4)
+    selected_cities = st.multiselect("Select the cities to compare:", unique_countries_list, default=["Buenos Aires", "Dakar"], max_selections=4)
 
     cols2 = st.columns([6, 1, 6])
 
